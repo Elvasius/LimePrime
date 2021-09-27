@@ -238,7 +238,6 @@ end
 
 function stopSmoke()
     local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
-    print("stop")
     TriggerServerEvent("limePrimePressedSmokeServer", VehToNet(vehicle), false)
     StopParticleFxLooped(smokeHandle, true)
     smokeHandle = nil
